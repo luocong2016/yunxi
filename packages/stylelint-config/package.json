@@ -16,5 +16,6 @@
   },
   "devDependencies": {
     "stylelint": "^13.0.0"
-  }
+  },
+  "gitHead": "b6d42528deecef0e67fceed1bd9cbbdf3e267419"
 }

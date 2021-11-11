@@ -26,5 +26,6 @@
     "cross-env": "^7.0.3",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12"
-  }
+  },
+  "gitHead": "b6d42528deecef0e67fceed1bd9cbbdf3e267419"
 }
