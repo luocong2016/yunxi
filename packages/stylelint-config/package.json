@@ -1,11 +1,15 @@
 {
-  "name": "stylelint-config",
+  "name": "@imitate/stylelint-config",
   "version": "0.0.0",
   "description": "stylelint-config",
   "author": "luocong2016@126.com <luocong2016@126.com>",
-  "homepage": "",
-  "license": "MIT",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/luocong2016/yunxi/tree/main/packages/stylelint-config",
   "dependencies": {
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^22.0.0"

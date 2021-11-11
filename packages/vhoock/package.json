@@ -1,5 +1,5 @@
 {
-  "name": "vhoock",
+  "name": "@imitate/vhoock",
   "version": "0.0.0",
   "description": "vue hoock",
   "keywords": [
@@ -7,14 +7,18 @@
     "vue3"
   ],
   "author": "luocong2016@126.com <luocong2016@126.com>",
-  "homepage": "",
-  "license": "MIT",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/luocong2016/yunxi/tree/main/packages/vhoock",
   "scripts": {
     "build": "rimraf lib&&cross-env NODE_ENV=production rollup -c"
   },

@@ -1,11 +1,15 @@
 {
-  "name": "eslint-config",
+  "name": "@imitate/eslint-config",
   "version": "0.0.0",
   "description": "eslint",
   "author": "luocong2016@126.com <luocong2016@126.com>",
-  "homepage": "",
-  "license": "MIT",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/luocong2016/yunxi/tree/main/packages/eslint-config",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "5.3.1",
