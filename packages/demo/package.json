@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "repository": "https://github.com/luocong2016/yunxi/tree/main/packages/demo",
   "scripts": {
     "serve": "vue-cli-service serve && webpack-dev-server --open",
     "build": "vue-cli-service build"
