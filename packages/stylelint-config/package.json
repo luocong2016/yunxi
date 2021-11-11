@@ -1,0 +1,19 @@
+{
+  "name": "stylelint-config",
+  "version": "0.0.0",
+  "description": "stylelint-config",
+  "author": "luocong2016@126.com <luocong2016@126.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^13.0.0"
+  },
+  "publishConfig": {
+    "registry": "http://192.168.6.13:8082/repository/npm_all/"
+  }
+}
