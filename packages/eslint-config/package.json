@@ -17,8 +17,5 @@
   "devDependencies": {
     "eslint": "^8.0.0",
     "typescript": "4.x"
-  },
-  "publishConfig": {
-    "registry": "http://192.168.6.13:8082/repository/npm_all/"
   }
 }
