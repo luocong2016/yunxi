@@ -1,6 +1,6 @@
 {
   "name": "@imitate/stylelint-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "stylelint-config",
   "author": "luocong2016@126.com <luocong2016@126.com>",
   "main": "index.js",
