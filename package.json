@@ -2,6 +2,8 @@
   "name": "root",
   "private": true,
   "devDependencies": {
+    "@imitate/eslint-config": "0.0.1",
+    "@imitate/stylelint-config": "0.0.1",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "cross-env": "^7.0.3",

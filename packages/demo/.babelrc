@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    ["@vue/babel-plugin-jsx"],
+    [
+      "import",
+      {
+        "libraryName": "ant-design-vue",
+        "libraryDirectory": "es",
+        "style": true
+      }
+    ]
+  ]
+}
