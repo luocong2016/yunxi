@@ -1,4 +1,4 @@
-import { defineComponent, PropType, computed } from 'vue'
+import { defineComponent, PropType, computed, Transition } from 'vue'
 
 import { ANIMATE } from '@/constant'
 import { tuple } from '@/utils/type'
@@ -70,12 +70,12 @@ export default defineComponent({
     const leaveAnimate = computed(() => activeClass(true))
 
     return () => !props.disabled
-      ? <transition
-        enter-active-class={`animated ${enterAnimate.value} page-toggle-enter-active`}
-        leave-active-class={`animated ${leaveAnimate.value} page-toggle-leave-active`}
+      ? <Transition
+        enterActiveClass={`animated ${enterAnimate.value} page-toggle-enter-active`}
+        leaveActiveClass={`animated ${leaveAnimate.value} page-toggle-leave-active`}
       >
         {slots.default?.()}
-      </transition>
+      </Transition>
       : slots.default?.()
   }
 })

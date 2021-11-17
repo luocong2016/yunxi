@@ -4,6 +4,7 @@ import Footer from '@/layouts/footer'
 import Notice from '@/layouts/header/notice'
 import Avatar from '@/layouts/header/avatar'
 import PageTransition, { AnimateType } from '@/layouts/pageTransition'
+import Setting from '@/layouts/setting';
 
 console.log('PageTransition', PageTransition)
 
@@ -17,7 +18,7 @@ export default defineComponent({
     const animate = ref<AnimateType>('zoom')
     const inc = () => {
       count.value++;
-      animate.value = animate.value === 'roll' ? 'zoom' : 'roll'
+      animate.value = animate.value === 'fade' ? 'zoom' : 'fade'
     };
 
     return () => <div>
@@ -30,8 +31,10 @@ export default defineComponent({
       <Avatar />
       <br />
       <PageTransition animate={animate.value}>
-        <div style="background: #ccc">123</div>
+        <span style="background: #ccc">{animate.value}</span>
       </PageTransition>
+
+      <Setting />
     </div>
   }
 });

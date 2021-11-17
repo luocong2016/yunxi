@@ -1,8 +1,6 @@
 import { createApp } from 'vue'
 
-import 'ant-design-vue/lib/style/themes/default.less'
-
-import 'animate.css/source/animate.css'
+import './theme/index.less'
 
 import App from './App'
 import router from './router'
