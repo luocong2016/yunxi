@@ -3,5 +3,25 @@
 }
 
 .img-checkbox {
+  user-select: none;
+  position: relative;
+  cursor: pointer;
 
+  &__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  &__check {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    color: #1890ff;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+  }
 }
