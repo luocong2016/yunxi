@@ -21,7 +21,7 @@ export default defineComponent({
         src="https://gw.alipayobjects.com/zos/rmsportal/jpRkZQMyYRryryPNtyIC.svg"
       />
       <ImgCheckbox
-        style="width: 150px;"
+        style="width:150px;"
         label="深夜模式"
         value="night"
         src="https://gw.alipayobjects.com/zos/antfincdn/hmKaLQvmY2/LCkqqYNmvBEbokSDscrm.svg"

@@ -11,6 +11,10 @@ export const ImgCheckboxGroup = defineComponent({
   emits: ['update:modelValue', 'change'],
 
   props: {
+    type: {
+      type: String,
+      default: 'color'
+    },
     disabled: Boolean,
     multiple: {
       type: Boolean,
@@ -60,11 +64,9 @@ export default defineComponent({
     value: [String, Number],
     checked: Boolean,
     disabled: Boolean,
-    src: {
-      type: String,
-      required: true
-    },
-    style: [String, Object]
+    src: String,
+    color: String,
+    style: Object
   },
 
   setup(props, { emit }) {
@@ -75,6 +77,19 @@ export default defineComponent({
         return props.checked
       }
       return parent.mValue.value.includes(props.value)
+    })
+
+    const backgroundStyle = computed(() => {
+      if (props.color) {
+        return {
+          backgroundColor: props.color,
+          backgroundSize: '100% 100%'
+        }
+      }
+      return {
+        background: `url(${props.src}) no-repeat center`,
+        backgroundSize: '100% 100%'
+      }
     })
 
     const toggle = (e: Event) => {
@@ -91,8 +106,11 @@ export default defineComponent({
     }
 
     return () => <Tooltip title={props.label}>
-      <div class="img-checkbox" onClick={toggle} style={props.style}>
-        <img class="img-checkbox__img" src={props.src} alt="" />
+      <div
+        class="img-checkbox"
+        style={{ ...props.style, ...backgroundStyle.value }}
+        onClick={toggle}
+      >
         {
           checked.value
             ?
@@ -106,3 +124,4 @@ export default defineComponent({
     </Tooltip>
   }
 })
+

@@ -40,29 +40,6 @@ export default defineComponent({
       <Setting />
       <br />
 
-      a: {JSON.stringify(checkedGroup.value)}
-
-      <ImgCheckboxGroup v-model={[checkedGroup.value]} multiple={false}>
-        <ImgCheckbox
-          style="width: 150px;"
-          label="暗色菜单风格"
-          value="dark"
-          src="https://gw.alipayobjects.com/zos/rmsportal/LCkqqYNmvBEbokSDscrm.svg"
-        />
-        <ImgCheckbox
-          style={{ width: '150px', fontSize: '20px' }}
-          label="亮色菜单风格"
-          value="light"
-          src="https://gw.alipayobjects.com/zos/rmsportal/jpRkZQMyYRryryPNtyIC.svg"
-        />
-        <ImgCheckbox
-          style="width: 150px;"
-          label="深夜模式"
-          value="night"
-          src="https://gw.alipayobjects.com/zos/antfincdn/hmKaLQvmY2/LCkqqYNmvBEbokSDscrm.svg"
-        />
-      </ImgCheckboxGroup>
-
     </div>
   }
 });
