@@ -1,6 +1,7 @@
 # Demo
 ```vue
 import { defineComponent, ref } from "vue"
+import ImgCheckbox, { ImgCheckboxGroup } from '@/components/checkbox/ImgCheckbox'
 
 export default defineComponent({
   const checkedGroup = ref(['dark'])
